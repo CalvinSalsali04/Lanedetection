@@ -18,17 +18,3 @@ To run the lane detection script, execute the following command in the terminal:
 
 Copy code
 python lane_detection.py
-Make sure the video file path in the script is correct.
-
-How It Works
-The script performs the following steps:
-
-Captures video from a file.
-Applies a Gaussian blur to each frame to reduce noise.
-Converts the frame to grayscale for edge detection.
-Applies Canny edge detection to find edges in the frame.
-Defines a region of interest (ROI) to focus on the likely area for lane lines.
-Uses the Hough Transform to detect line segments in the edges.
-Filters out line segments based on their orientation to identify potential lane lines.
-Draws the detected lane lines on the original frame.
-Displays the processed video stream with highlighted lane lines.
